@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://ds48pt6r1cne6"]
+
+[ext_resource type="ArrayMesh" uid="uid://bxpye05nphabc" path="res://Kenney_Assets/ship-pirate-large.obj" id="1_r6v2u"]
+[ext_resource type="ArrayMesh" uid="uid://vum1nn36sosg" path="res://Kenney_Assets/cannon.obj" id="2_updlm"]
+[ext_resource type="ArrayMesh" uid="uid://3i7fuu17lfrl" path="res://Kenney_Assets/rocks-a.obj" id="2_upn0u"]
+[ext_resource type="ArrayMesh" uid="uid://dfbw3icihqjsg" path="res://Kenney_Assets/rocks-b.obj" id="3_gc3hm"]
+[ext_resource type="ArrayMesh" uid="uid://bxau2u5h78r31" path="res://Kenney_Assets/cannon-ball.obj" id="3_uqxop"]
+[ext_resource type="ArrayMesh" uid="uid://le17yhji2i36" path="res://Kenney_Assets/rocks-c.obj" id="4_x7jxu"]
+[ext_resource type="ArrayMesh" uid="uid://b028qd7d0hp6h" path="res://Kenney_Assets/chest.obj" id="5_updlm"]
+[ext_resource type="ArrayMesh" uid="uid://5o5nbs8j0hpe" path="res://Kenney_Assets/crate.obj" id="6_uqxop"]
+[ext_resource type="ArrayMesh" uid="uid://dejloptlv02u6" path="res://Kenney_Assets/bottle-large.obj" id="9_1oy6q"]
+[ext_resource type="ArrayMesh" uid="uid://1mbqjefrrohw" path="res://Kenney_Assets/bottle.obj" id="10_c3q1n"]
+
+[node name="Node3D" type="Node3D" unique_id=348269357]
+
+[node name="ShipPirateLarge (parent)" type="MeshInstance3D" parent="." unique_id=1066851901]
+mesh = ExtResource("1_r6v2u")
+
+[node name="Cannon (child)" type="MeshInstance3D" parent="ShipPirateLarge (parent)" unique_id=1459634405]
+transform = Transform3D(-0.0020071692, 0, 0.999998, 0, 1, 0, -0.999998, 0, -0.0020071692, 1.6921208, 2.1383274, -1.7881451)
+mesh = ExtResource("2_updlm")
+
+[node name="CannonBall (grandchild)" type="MeshInstance3D" parent="ShipPirateLarge (parent)/Cannon (child)" unique_id=1172729804]
+transform = Transform3D(-0.0020071692, 0, -0.999998, 0, 1, 0, 0.999998, 0, -0.0020071692, -0.0054723024, 0.57956576, 0.8477272)
+mesh = ExtResource("3_uqxop")
+
+[node name="Cannon (child)2" type="MeshInstance3D" parent="ShipPirateLarge (parent)" unique_id=578343936]
+transform = Transform3D(0.0012043118, 0, -0.9999992, 0, 1, 0, 0.9999992, 0, 0.0012043118, -1.7935398, 2.1383274, -1.7881451)
+mesh = ExtResource("2_updlm")
+
+[node name="CannonBall (grandchild)" type="MeshInstance3D" parent="ShipPirateLarge (parent)/Cannon (child)2" unique_id=403526286]
+transform = Transform3D(-0.0020071692, 0, -0.999998, 0, 1, 0, 0.999998, 0, -0.0020071692, -0.0054723024, 0.57956576, 0.8477272)
+mesh = ExtResource("3_uqxop")
+
+[node name="RocksA" type="MeshInstance3D" parent="." unique_id=602852725]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.692595, 0, 11.518936)
+mesh = ExtResource("2_upn0u")
+
+[node name="RocksB" type="MeshInstance3D" parent="." unique_id=251627142]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.591872, 0, 8.387727)
+mesh = ExtResource("3_gc3hm")
+
+[node name="RocksC" type="MeshInstance3D" parent="." unique_id=1367449286]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.817028, 0, 15.431704)
+mesh = ExtResource("4_x7jxu")
+
+[node name="Chest" type="MeshInstance3D" parent="." unique_id=557906145]
+transform = Transform3D(1.0983623, 0, 0, 0, 0.89945924, 0, 0, 0, 0.7659957, 1.0017649, 3.4964228, -5.6674843)
+mesh = ExtResource("5_updlm")
+
+[node name="Crate (parent)" type="MeshInstance3D" parent="." unique_id=829950843]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.19216967, 2.8070717, 2.8972313)
+mesh = ExtResource("6_uqxop")
+
+[node name="BottleLarge (child)" type="MeshInstance3D" parent="Crate (parent)" unique_id=59355038]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.25737906, 0.09760451, 0.1339438)
+mesh = ExtResource("9_1oy6q")
+
+[node name="Bottle (child)" type="MeshInstance3D" parent="Crate (parent)" unique_id=1350901377]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.109359324, 0.16450834, -0.32374763)
+mesh = ExtResource("10_c3q1n")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1925654427]
+transform = Transform3D(-0.2689008, 0.2927618, -0.9175963, 0.18632302, 0.9505013, 0.24865846, 0.9449741, -0.10410485, -0.31013885, -15.068722, 10.560499, -0.7432022)
