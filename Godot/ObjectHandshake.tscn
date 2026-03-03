@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bt4l84u4c3npk"]
+
+[ext_resource type="Script" uid="uid://haary0qg5g2b" path="res://Caller.gd" id="1_1gp4r"]
+[ext_resource type="Script" uid="uid://nb5gx2gbivwp" path="res://Receiver.gd" id="2_0qo6u"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_01fdc"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_3c5q0"]
+
+[node name="Node3D" type="Node3D" unique_id=66357277]
+
+[node name="Caller" type="MeshInstance3D" parent="." unique_id=1537766693 node_paths=PackedStringArray("receiver")]
+mesh = SubResource("BoxMesh_01fdc")
+script = ExtResource("1_1gp4r")
+receiver = NodePath("../Receiver")
+
+[node name="Receiver" type="MeshInstance3D" parent="." unique_id=405092584]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4414353, 0, 0)
+mesh = SubResource("SphereMesh_3c5q0")
+script = ExtResource("2_0qo6u")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1622908986]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6030891, 0, 2.8872914)
+current = true
