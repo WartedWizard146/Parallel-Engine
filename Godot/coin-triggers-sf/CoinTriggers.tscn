@@ -1,3 +1,19 @@
 [gd_scene format=3 uid="uid://bj61e5hnoa6ku"]
 
-[node name="Node3D" type="Node3D" unique_id=1348531698]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://proto_controller.tscn" id="1_3xk06"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_lqtca"]
+
+[node name="CoinTriggers" type="Node3D" unique_id=746096895]
+
+[node name="ProtoController" parent="." unique_id=1601097186 instance=ExtResource("1_3xk06")]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1936193694]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1681213661]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.64910614, -2.9542117)
+shape = SubResource("SphereShape3D_lqtca")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1774293320]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7016628, 0)
+current = true
