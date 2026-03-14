@@ -15,6 +15,10 @@ run/main_scene="uid://bj61e5hnoa6ku"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[dotnet]
+
+project/assembly_name="CoinTriggers_SF"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
