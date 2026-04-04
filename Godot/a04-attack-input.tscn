@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dnvxkw337hfkt"]
 
-[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="1_b8be2"]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller.tscn" id="1_b8be2"]
 
 [node name="a04-attack-input" type="Node3D" unique_id=1024046966]
 
