@@ -1,1 +1,1 @@
-Associated assignment text files, images, videos, etc. will go here.
+LMB is the trigger for the attack action and the level/scene/node names are "a04-attack-input"

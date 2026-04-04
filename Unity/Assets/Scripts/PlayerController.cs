@@ -1,0 +1,45 @@
+using System.Collections;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerController : MonoBehaviour
+{
+    public bool canAttack;
+    
+    public float speed;
+
+    private Vector2 move;
+
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        move = context.ReadValue<Vector2>();
+    }
+
+    public void Attack(InputAction.CallbackContext context)
+    {
+        if (canAttack == true)
+        {
+            Debug.Log("Attack!!");
+            canAttack = false;
+        }
+        
+    }
+    
+    public void movePlayer()
+    {
+        Vector3 movement = new Vector3(move.x, 0f, move.y);
+
+        transform.Translate(movement * speed * Time.deltaTime, Space.World);
+    }
+
+    void Start()
+    {
+        canAttack = true;
+    }
+    
+    void Update()
+    {
+        movePlayer();
+        canAttack = true;
+    }
+}
