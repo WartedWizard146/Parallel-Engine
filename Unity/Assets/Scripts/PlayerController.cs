@@ -1,11 +1,13 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
-public class Player : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public int health;
 
     public float speed;
+
+    public int points;
 
     private Vector2 move;
 
