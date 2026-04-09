@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -10,6 +11,40 @@ public class PlayerController : MonoBehaviour
     public int points;
 
     private Vector2 move;
+    
+    private bool canBeDamaged = true;
+
+    private IEnumerator MakeIFrames()
+    {
+        yield return new WaitForSeconds(1f);
+        canBeDamaged = true;
+        yield break;
+    }
+
+    public void OnHit()
+    {
+        if (canBeDamaged)
+        {
+            health = health - 1;
+            if (health <= 0)
+            {
+                if (UnityEditor.EditorApplication.isPlaying)
+                {
+                    UnityEditor.EditorApplication.isPlaying = false;
+                }
+                else
+                {
+                    Application.Quit();
+                }
+            }
+            else
+            {
+                canBeDamaged = false;
+                StartCoroutine(MakeIFrames());
+            }
+        }
+        
+    }
 
     public void OnMove(InputAction.CallbackContext context)
     {
