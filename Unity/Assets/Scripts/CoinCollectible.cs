@@ -10,7 +10,7 @@ public class CoinCollectible : MonoBehaviour
         {
             PlayerController player = other.GetComponent<PlayerController>();
 
-            player.points = player.points + 100;
+            player.points += 100;
 
             Destroy(gameObject);
         }

@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     {
         if (canBeDamaged)
         {
-            health = health - 1;
+            health -= 1;
             if (health <= 0)
             {
                 if (UnityEditor.EditorApplication.isPlaying)

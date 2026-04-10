@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class SwordProjectile : MonoBehaviour
 {
+    public float speed;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -13,11 +15,11 @@ public class SwordProjectile : MonoBehaviour
     }
     void Start()
     {
-        
+       
     }
 
     void Update()
     {
-        
+        transform.position += transform.up * speed * Time.deltaTime;
     }
 }
