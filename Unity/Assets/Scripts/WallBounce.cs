@@ -1,15 +1,20 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
 public class WallBounce : MonoBehaviour
 {
-
-    /*private void OnTriggerEnter(Collider other)
+    private float random;
+    
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Sword"))
         {
-            other.transform.rotation *= -1;
+            random = Random.Range(90f, 180f);
+
+            other.transform.eulerAngles = new Vector3(other.transform.eulerAngles.x, other.transform.eulerAngles.y + random, 
+                other.transform.eulerAngles.z); 
         }
-    }*/
+    }
     void Start()
     {
         

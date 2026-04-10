@@ -78,6 +78,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1bbfacf84b2c7234fb1df6eb393ba4d9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 3570002055856508359}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1bbfacf84b2c7234fb1df6eb393ba4d9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3384922086433586500}
   m_SourcePrefab: {fileID: 100100000, guid: 1bbfacf84b2c7234fb1df6eb393ba4d9, type: 3}
 --- !u!1 &8758391435524796140 stripped
 GameObject:
@@ -132,3 +135,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &-3384922086433586500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8758391435524796140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a25a84b80adfedc458d3d929ab629a0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallBounce
