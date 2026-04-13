@@ -61,12 +61,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -1249356163939759617, guid: b79d854a96087e94c8187dfc0b61554a, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -1249356163939759617, guid: b79d854a96087e94c8187dfc0b61554a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 91874ac6ac1aee445881623ac90904f9, type: 2}
     - target: {fileID: 919132149155446097, guid: b79d854a96087e94c8187dfc0b61554a, type: 3}
       propertyPath: m_Name
       value: Gate
+      objectReference: {fileID: 0}
+    - target: {fileID: 7385773107824023246, guid: b79d854a96087e94c8187dfc0b61554a, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

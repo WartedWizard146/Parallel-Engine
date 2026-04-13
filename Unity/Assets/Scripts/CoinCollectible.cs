@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class CoinCollectible : MonoBehaviour
 {
+    public GameObject spawner;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -10,14 +11,16 @@ public class CoinCollectible : MonoBehaviour
         {
             PlayerController player = other.GetComponent<PlayerController>();
 
-            player.points += 100;
+            player.points += 50;
+
+            spawner.GetComponent<SpawnCoins>().count -= 0.5f;
 
             Destroy(gameObject);
         }
     }
     void Start()
     {
-  
+        spawner = GameObject.Find("Spawner");
     }
 
     void Update()

@@ -65,6 +65,10 @@ PrefabInstance:
       value: Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7113232789235503381, guid: 2a30aca6a7d63704a9d1c4dfe03b1737, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7113232789235503381, guid: 2a30aca6a7d63704a9d1c4dfe03b1737, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 91874ac6ac1aee445881623ac90904f9, type: 2}

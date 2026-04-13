@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c43857bf14a36f429a5dbfb186bb5f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinCollectible
+  spawner: {fileID: 1894131611874734956, guid: d4f1c2f15c90b92439a67701e6d05906, type: 3}
 --- !u!135 &8838244110538969123
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -144,7 +145,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1836523051379188874}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
