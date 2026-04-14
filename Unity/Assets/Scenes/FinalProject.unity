@@ -1200,8 +1200,48 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8724275193115222286, guid: 6e82e6ebb5f3f324e8fd9fe8f0adcd58, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9072992148034736939}
+    - targetCorrespondingSourceObject: {fileID: 7457613171995831472, guid: 6e82e6ebb5f3f324e8fd9fe8f0adcd58, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9072992148034736943}
   m_SourcePrefab: {fileID: 100100000, guid: 6e82e6ebb5f3f324e8fd9fe8f0adcd58, type: 3}
+--- !u!1 &9072992148034736936 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7457613171995831472, guid: 6e82e6ebb5f3f324e8fd9fe8f0adcd58, type: 3}
+  m_PrefabInstance: {fileID: 9072992148034736935}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9072992148034736937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8724275193115222286, guid: 6e82e6ebb5f3f324e8fd9fe8f0adcd58, type: 3}
+  m_PrefabInstance: {fileID: 9072992148034736935}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9072992148034736939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9072992148034736937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8741df8e29a3b941836d95154e64f9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIText
+--- !u!114 &9072992148034736943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9072992148034736936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4911da6dbb002d4695def660cc34a18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PointsText
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

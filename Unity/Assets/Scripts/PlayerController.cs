@@ -2,6 +2,7 @@ using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Events;
 public class PlayerController : MonoBehaviour
 {
     public int health;
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
         if (canBeDamaged)
         {
             health -= 1;
+
             if (health <= 0)
             {
                 if (UnityEditor.EditorApplication.isPlaying)
