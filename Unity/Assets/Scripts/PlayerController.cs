@@ -7,9 +7,9 @@ public class PlayerController : MonoBehaviour
 {
     public int health;
 
-    public float speed;
+    public int speed;
 
-    public int points;
+    public float points;
 
     private Vector2 move;
     

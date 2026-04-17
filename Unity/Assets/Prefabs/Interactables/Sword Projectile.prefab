@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SwordProjectile
   speed: 4
+  x: 0
 --- !u!54 &4968813620431975384
 Rigidbody:
   m_ObjectHideFlags: 0

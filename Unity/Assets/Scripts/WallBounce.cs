@@ -5,7 +5,7 @@ public class WallBounce : MonoBehaviour
 {
     private float random;
     
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Sword"))
         {
